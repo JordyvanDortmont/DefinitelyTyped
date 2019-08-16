@@ -8,9 +8,16 @@
 
 declare namespace autoPrefixer {
     interface Options {
-        browsers?: string[];
+        env?: string;
         cascade?: boolean;
+        add?: boolean;
         remove?: boolean;
+        supports?: boolean;
+        flexbox?: boolean|"no-2009";
+        grid?: false|"autoplace"|"no-autoplace";
+        stats?: object;
+        browsers?: string[];
+        ignoreUnknownVersions?: boolean;
     }
 }
 
